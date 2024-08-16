@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import axios from 'axios';
 
-const API_KEY = 'ab47f8bb85436367e4ff9f0d417b6a61';
+const API_KEY = process.env.REACT_APP_EXCHANGE_API_KEY;
 const EXCHANGE_API_URL = `https://api.exchangeratesapi.io/v1/latest?access_key=${API_KEY}`;
 
 // Fetch accounts from local storage
