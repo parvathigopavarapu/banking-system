@@ -1,0 +1,114 @@
+
+
+.dashboard-page {
+    top:7rem;
+    padding: 20px;
+  }  
+
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: #004085;
+    transform: translateY(0);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #c0cbd4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .account-section{
+    margin:1rem;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #315478;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+  }
+  
+  .main-content {
+    margin-top: 6.25rem; 
+    margin-left: 10rem;
+  }
+  
+  .sidebar.hidden {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .sidebar.hidden {
+      display: block;
+      position: fixed;
+      width: 250px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1000;
+      background-color: #315478;
+      padding: 20px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .menu-icon {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1001;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+
+  
+  
