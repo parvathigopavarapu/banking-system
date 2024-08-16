@@ -3,15 +3,13 @@ import AccountList from '../components/Dashboard/AccountList';
 // import { useNavigate } from 'react-router-dom';
 import './DashboardPage.css';
 import CreateAccountPage from './CreateAccountPage';
-import FundTransfer from './FundTransferPage';
-import { addStaticAccount, fetchAccounts, updateAccountBalances } from '../Services/staticData';
+import { addStaticAccount, fetchAccounts } from '../Services/staticData';
 // import { fetchAccounts, updateAccountBalances } from '../services/accountService'; 
 
 const DashboardPage = () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
     const isAdmin = user.role === 'admin';
   const [isCreateAccount,setIsCreateForm] =useState(false)
-  const [fundTransfer,setFundTransfer] =useState(false)
   const [accounts, setAccounts] = useState([]
    );
   useEffect(() => {

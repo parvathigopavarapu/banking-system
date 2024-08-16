@@ -4,7 +4,6 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import DashboardPage from "./pages/DashboardPage";
 import FundTransferPage from "./pages/FundTransferPage";
-import NotFoundPage from "./pages/NotFoundPage"; // A fallback page for undefined routes
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./components/Layout";
